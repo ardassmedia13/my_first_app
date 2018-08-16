@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+	<head>
+
+		<title>Test_Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="{% static 'images/dp.jpeg' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Industrious</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+
+    	<nav id="menu">
+				<ul class="links">
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="{% url 'elements' %}">Elements</a></li>
+					<li><a href="{% url 'generic' %}">Generic</a></li>
+				</ul>
+			</nav>
