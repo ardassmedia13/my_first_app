@@ -1,8 +1,8 @@
-from django.urls import path
+from django.conf.urls import  url
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('elements/', views.elements, name='elements'),
-    path('generic/', views.generic, name='generic'),
+    url('', views.index, name='index'),
+    url('elements/', views.elements, name='elements'),
+    url('generic/', views.generic, name='generic'),
 ]
